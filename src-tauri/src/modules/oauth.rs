@@ -378,6 +378,8 @@ pub fn get_auth_url_with_client(
         "https://www.googleapis.com/auth/userinfo.profile",
         "https://www.googleapis.com/auth/cclog",
         "https://www.googleapis.com/auth/experimentsandconfigs",
+        // Antigravity App/Hub 2.32.1 起要求 aicode 权限，缺了会被判 ineligible
+        "https://www.googleapis.com/auth/aicode",
     ]
     .join(" ");
 
